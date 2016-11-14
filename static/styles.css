@@ -7,40 +7,59 @@
     
 }
 
+.straw {
+    height: 170px;
+    width: 10px;
+    background-color: blue;
+    margin: -190px auto;
+    border: rgba(72, 148, 235, 1) solid 2px;
+    z-index: 0;
+    transform: skewX(-10deg);
+
+}
+
 .boba-cup {
-    background-color: rgb(230,230,250);
+    background-color: rgba(230,230,250, 0.75);
     height: 100px;
     width: 70px;
     margin: 0 auto;
     border: purple 2px solid;
+    position: relative;
+    z-index: 1;
      -webkit-transform: perspective(200px) rotateX(-30deg);
 
 }
 
 .cup-rim {
-    background-color: rgb(230,230,250);
-    height: 5px;
+    background-color: rgba(230,230,250, 0.75);
+    height: 3px;
     width: 90px;
     border: purple 2px solid;
     margin: 0 auto;
-    border-radius: 20%
+    border-radius: 10%;
+    position: relative;
+    z-index: 1;
 
 }
 
 .lid {
-    background-color: rgb(230,230,250);
+    background-color: rgba(230,230,250, 0.75);
     height: 40px;
     width: 80px;
     border: purple 2px solid;
     margin: 0 auto;
     border-radius: 50% 50% 0 0;
+    z-index: 1;
+    position: relative;
 
 }
 
 .boba-liquid {
     height: 70px;
-    background-color: rgb(186,85,211);
+    background-color: rgba(186,85,211, 0.75);
     margin-top: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .boba {
