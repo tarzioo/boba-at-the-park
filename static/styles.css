@@ -57,9 +57,20 @@
 .boba-liquid {
     height: 70px;
     background-color: rgba(186,85,211, 0.75);
-    margin-top: 30px;
+    margin-top: -4px;
     position: relative;
     z-index: 1;
+}
+
+.ruffle {
+    height: 15px;
+    width: 24px;
+    background-color: rgba(186,85,211, 0.75);
+    display: inline-block;
+    border-radius: 50% 50% 0 0;
+    margin: 15px -5px 0 0;
+
+
 }
 
 .boba {
@@ -79,7 +90,7 @@
     display: inline-block;
 
 }
-.jumping {
+/*.jumping {
     animation-name: jumping;
     -webkit-animation-name: jumping;
 
@@ -89,7 +100,7 @@
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
-}
+}*/
 
 @keyframes jumping {
     0% {
