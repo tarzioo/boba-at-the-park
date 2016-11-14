@@ -48,7 +48,6 @@
 }
 
 .balls {
-    margin-left: 10px;
 
 
 }
@@ -66,8 +65,8 @@
     -webkit-animation-name: jumping;
 
 
-    animation-duration: 5s;   
-    -webkit-animation-duration: 5s;
+    animation-duration: 3s;   
+    -webkit-animation-duration: 3s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -115,8 +114,8 @@
     -webkit-animation-name: ball-one;
 
 
-    animation-duration: 2s;   
-    -webkit-animation-duration: 2s;
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -124,16 +123,25 @@
 
 @keyframes ball-one {
     0% {
-        transform: translate(70%, 500%);  
+        transform: translate(70%, 400%);  
     }
 
-    50% {
+    20% {
         transform: translate(30%, 40%);  
+    }
+    40% {
+        transform: translate(0%, 400%);  
+    }
+    60% {
+        transform: translate(70%, 0%);  
+    }
+    80% {
+        transform: translate(0%, 40%);  
     }
     
      
     100% {
-        transform: translate(70%, 500%);
+        transform: translate(70%, 400%);
     }           
 }
 
@@ -142,8 +150,8 @@
     -webkit-animation-name: ball-two;
 
 
-    animation-duration: 2s;   
-    -webkit-animation-duration: 2s;
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -151,16 +159,25 @@
 
 @keyframes ball-two {
     0% {
-        transform: translate(80%, 450%);  
+        transform: translate(80%, 0%);  
     }
 
-    50% {
-        transform: translate(0%, 200%);  
+    20% {
+        transform: translate(0%, 400%);  
+    }
+    40% {
+        transform: translate(60%, 200%);  
+    }
+    60% {
+        transform: translate(-10%, 100%);  
+    }
+    80% {
+        transform: translate(40%, 200%);  
     }
     
      
     100% {
-        transform: translate(80%, 450%);
+        transform: translate(80%, 0%);
     }           
 }
 
@@ -169,8 +186,8 @@
     -webkit-animation-name: ball-three;
 
 
-    animation-duration: 2s;   
-    -webkit-animation-duration: 2s;
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -178,16 +195,28 @@
 
 @keyframes ball-three {
     0% {
-        transform: translate(90%, 400%);  
+        transform: translate(90%, 40%);  
     }
 
-    50% {
+    20% {
         transform: translate(10%, 100%);  
     }
-    
+
+    40% {
+        transform: translate(60%, 300%);  
+    }
+
+    60% {
+        transform: translate(-20%, 0%);  
+    }
+
+    80% {
+        transform: translate(50%, 200%);  
+    }
+
      
     100% {
-        transform: translate(90%, 400%);
+        transform: translate(90%, 40%);
     }           
 }
 
@@ -196,8 +225,8 @@
     -webkit-animation-name: ball-four;
 
 
-    animation-duration: 2s;   
-    -webkit-animation-duration: 2s;
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -208,8 +237,17 @@
         transform: translate(80%, 300%);  
     }
 
-    50% {
+    20% {
+        transform: translate(0%, 100%);  
+    }
+    40% {
+        transform: translate(-20%, 400%);  
+    }
+    60% {
         transform: translate(60%, 10%);  
+    }
+    80% {
+        transform: translate(10%, 200%);  
     }
     
      
@@ -223,8 +261,8 @@
     -webkit-animation-name: ball-five;
 
 
-    animation-duration: 2s;   
-    -webkit-animation-duration: 2s;
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -232,16 +270,25 @@
 
 @keyframes ball-five {
     0% {
-        transform: translate(60%, 250%);  
+        transform: translate(60%, 150%);  
     }
 
-    50% {
-        transform: translate(20%, 50%);  
+    20% {
+        transform: translate(0%, 10%);  
+    }
+    40% {
+        transform: translate(70%, 400%);  
+    }
+    60% {
+        transform: translate(10%, 150%);  
+    }
+    80% {
+        transform: translate(80%, 0%);  
     }
     
      
     100% {
-        transform: translate(60%, 250%);
+        transform: translate(60%, 150%);
     }           
 }
 
@@ -250,8 +297,8 @@
     -webkit-animation-name: ball-six;
 
 
-    animation-duration: 2s;   
-    -webkit-animation-duration: 2s;
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -259,15 +306,131 @@
 
 @keyframes ball-six {
     0% {
-        transform: translate(20%, 180%);  
+        transform: translate(20%, 0%);  
     }
 
-    50% {
-        transform: translate(50%, 150%);  
+    20% {
+        transform: translate(-50%, 150%);  
+    }
+    40% {
+        transform: translate(100%, 350%);  
+    }
+    60% {
+        transform: translate(-30%, 10%);  
+    }
+    80% {
+        transform: translate(0%, 150%);  
     }
     
      
     100% {
-        transform: translate(20%, 180%);
+        transform: translate(20%, 0%);
+    }           
+}
+.ball-seven {
+    animation-name: ball-seven;
+    -webkit-animation-name: ball-seven;
+
+
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes ball-seven {
+    0% {
+        transform: translate(20%, 0%);  
+    }
+
+    20% {
+        transform: translate(-50%, 150%);  
+    }
+    40% {
+        transform: translate(100%, 350%);  
+    }
+    60% {
+        transform: translate(-30%, 10%);  
+    }
+    80% {
+        transform: translate(0%, 150%);  
+    }
+    
+     
+    100% {
+        transform: translate(20%, 0%);
+    }           
+}
+
+.ball-eight {
+    animation-name: ball-eight;
+    -webkit-animation-name: ball-eight;
+
+
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes ball-eight {
+    0% {
+        transform: translate(20%, 0%);  
+    }
+
+    20% {
+        transform: translate(-50%, 150%);  
+    }
+    40% {
+        transform: translate(100%, 350%);  
+    }
+    60% {
+        transform: translate(-30%, 10%);  
+    }
+    80% {
+        transform: translate(0%, 150%);  
+    }
+    
+     
+    100% {
+        transform: translate(20%, 0%);
+    }           
+}
+
+.ball-nine {
+    animation-name: ball-nine;
+    -webkit-animation-name: ball-nine;
+
+
+    animation-duration: 1s;   
+    -webkit-animation-duration: 1s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes ball-nine {
+    0% {
+        transform: translate(40%, 50%);  
+    }
+
+    20% {
+        transform: translate(0%, 300%);  
+    }
+    40% {
+        transform: translate(30%, 10%);  
+    }
+    60% {
+        transform: translate(0%, 90%);  
+    }
+    80% {
+        transform: translate(60%, 300%);  
+    }
+    
+     
+    100% {
+        transform: translate(40%, 50%);
     }           
 }
