@@ -1,11 +1,91 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <title>
-        Boba
-        </title>
-        <link rel="stylesheet" type="text/css" href="static/styles.css">
-    </head>
-    <body>
-    </body>
-</html>
+.park {
+    background-image: url("img/park.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    
+}
+
+.boba-cup {
+    background-color: rgb(230,230,250);
+    height: 100px;
+    width: 70px;
+    margin: 0 auto;
+    border: purple 2px solid;
+     -webkit-transform: perspective(200px) rotateX(-30deg);
+
+}
+
+.cup-rim {
+    background-color: rgb(230,230,250);
+    height: 5px;
+    width: 90px;
+    border: purple 2px solid;
+    margin: 0 auto;
+    border-radius: 20%
+
+}
+
+.lid {
+    background-color: rgb(230,230,250);
+    height: 40px;
+    width: 80px;
+    border: purple 2px solid;
+    margin: 0 auto;
+    border-radius: 50% 50% 0 0;
+
+}
+
+.boba {
+
+}
+
+.jumping {
+    animation-name: jumping;
+    -webkit-animation-name: jumping;
+
+
+    animation-duration: 5s;   
+    -webkit-animation-duration: 5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes jumping {
+    0% {
+        transform: translate(20%, 170%);  
+    }
+    10% {
+        transform: translate(20%, 150%);  
+    }
+    20% {
+        transform: translate(20%, 170%);  
+    }
+    30% {
+        transform: translate(20%, 150%);  
+    }
+    40% {
+        transform: translate(20%, 170%);  
+    }
+    50% {
+        transform: translate(20%, 150%);  
+    }
+    60% {
+        transform: translate(20%, 170%);  
+    }
+    70% {
+        transform: translate(20%, 150%);  
+    }
+    80% {
+        transform: translate(20%, 170%);  
+    }
+    90% {
+        transform: translate(20%, 150%);  
+    }
+     
+    100% {
+        transform: translate(20%, 170%);
+    }           
+}
